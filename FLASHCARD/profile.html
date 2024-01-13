@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css" type="text/css">
+    <title>Profile page</title>
+</head>
+<body onload="getRandomWord()">
+   <section id="Profile">
+        <h1>Greetings Student</h1>
+        <script language="javascript">
+            var name=
+            window.prompt("What is your name?");
+            var welcomeMessage="Welcome  "+ name+" to  your profile page!";
+            document.write(welcomeMessage);
+        </script>
+        <p> Happy learning</p>
+    </section>
+    <div class="subject">
+        <h1>Subject</h1>
+    </div>
+    <div class="factos">
+        <h1>factos</h1>
+    </div>
+    <button class="Find">Find fact</button>
+    <button class="Next">Next fact</button>
+   
+
+
+
+    <nav>
+        <a href="">About us</a>
+        <a href="http://127.0.0.1:5500/contact%20info.html">Contact</a>
+
+    </nav>
+    <script>
+        const subject=document.querySelector('.subject');
+        const factos=document.querySelector('.factos')
+        const FindButton=document.querySelector('.Find');
+        const NextFactButton=document.querySelector('.Next')
+       
+        course={
+            SoftwareEnginering:"This is a discipline of Engineering that deals with thew deatiled invention of a software product the process of requirement gathering, elicitation,testing,implimentation and deployment",
+            sen301:"This is a course that software engineering students study in their 3rd year of thier four year programme, it teaches them about the object oriented system and how its is used in software development, its vital in study as it will play a very key role in their final year defense project.The current lecturer of the course is Mr JhonBosco",
+            Biology:"we have more seneses than just five , the others consist of balance,temprature,proprioception,pain)"
+        
+        }
+        data=Object.entries(course)
+       console.log(data[0])
+       
+       function getRandomWord(){
+        randomTerm= data[Math.floor(Math.random()*data.length)]
+        console.log(randomTerm);
+        subject.innerHTML=`<h3>${randomTerm[0]}</h3>`
+        factos.innerHTML=`<h3>${randomTerm[1]}</h3>`
+       }
+       FindButton.addEventListener('click',function(){
+           factos.style.display='block';
+        });
+        NextFactButton.addEventListener('click',function(){
+        getRandomWord();
+        })
+
+    </script>
+   
+</body>
+</html>

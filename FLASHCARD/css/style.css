@@ -1,0 +1,46 @@
+body{
+    margin: 0%;
+    padding:0px;
+    font-family: sans-serif;
+    height: 100vh;
+    margin-top:100px;
+    position:relative;
+    display:block;
+    
+}
+.hero{
+    height: 100%;
+    object-fit:cover;
+    object-position:center;
+    background: url(IMG-20231128-WA0015.jpg);
+    background-size: cover;
+    background-position:center;
+    
+}
+.title {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.button{
+    text-align: center;
+    margin-top: 100px;
+}
+
+button {
+    color:black;
+    background-color: brown;
+    border: 1px solid #6C9FAA;
+    border-radius: 4px;
+    padding: 30px;
+    margin: 20px;
+        
+    
+}
+
+button:hover{
+    transform:scale(1.1);
+    }
+

@@ -1,0 +1,48 @@
+body{
+    margin:0px;
+    padding: 0%;
+    background-image: url(pexels-pixabay-268533.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+    object-fit: cover;
+    display:block;
+    position: relative;
+    font-family: sans-serif;
+    height: 100vh;
+    text-align: center;
+}
+#Profile{
+    font-size: large;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+.subject{
+    border: solid 10px black;
+    border-radius: 15px;
+    width: 45%;
+    margin: auto;
+    margin-top: 100px;
+    color:rgb(160, 144, 3);
+}
+.factos{
+    border: solid 10px whitesmoke ;
+    border-radius: 15px;
+    width: 45%;
+    margin: auto;
+    margin-top: 100px;
+    color: rgb(160, 144, 3);
+    display:none
+    
+}
+button{
+    color:black;
+    background-color:darkblue;
+    padding:20px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 15px;
+}
+button:hover{
+    transform:scale(1.1);
+}
